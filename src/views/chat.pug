@@ -1,0 +1,17 @@
+extends layout.pug
+
+block content
+    main
+        header
+            h1 Chat
+            p User: 
+                span(id="username")=username
+        ul(id="messages")
+
+        form(id="form" action="")
+            input(id="input" autocomplete="off")
+            button Send
+
+block scripts
+    script(src="/socket.io/socket.io.js")
+    script(src="./scripts/chat.js")

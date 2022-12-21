@@ -1,0 +1,10 @@
+extends layout.pug
+
+block styles
+block content
+    main
+        form(action="/chat")
+            h1 Login
+            div
+                input(type="text" name="username" placeholder="What is your name?" required)
+                button(type="submit") Sign in
