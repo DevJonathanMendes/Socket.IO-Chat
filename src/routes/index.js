@@ -7,10 +7,12 @@ router.get("/", (req, res) => {
 });
 
 router.get("/chat", (req, res) => {
-    if (req.query.username)
+    const { username, room } = req.query;
+    if (username && room)
         res.render("chat", {
             title: "Chat",
-            username: req.query.username
+            username: username,
+            room: room
         });
     else
         res.redirect("/");

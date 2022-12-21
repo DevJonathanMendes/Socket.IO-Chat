@@ -8,6 +8,9 @@ const PORT = process.env.PORT || 3000;
 
 io.on("connection", socket => {
     console.log("Connected");
+    socket.on("chatMessage", msg => {
+        io.emit("chatMessage", msg);
+    });
 });
 
 httpServer.listen(PORT, () => console.log(`Server listening on port:${PORT}`));
