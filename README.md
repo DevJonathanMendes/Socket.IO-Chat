@@ -42,6 +42,7 @@ http://localhost:[PORTA]/chat?username=[USERNAME]&room=[SALA] - Rota de chat
 - [Nodemon](https://nodemon.io/) - Utilitário de Desenvolvimento.
 - [Express.JS](https://expressjs.com/pt-br/) - Framework web rápido, flexível e minimalista para Node.JS.
 - [Socket.IO](https://socket.io/pt-br/) - Comunicação Bidirectional e com baixa-latencia para todas as plataformas.
+- [Pug](https://pugjs.org/api/getting-started.html) - Template engine robusto, elegante e rico em recursos para Node.JS.
 
 ## ✒️ Autor
 
