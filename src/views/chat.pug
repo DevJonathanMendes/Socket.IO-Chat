@@ -1,14 +1,18 @@
 extends layout.pug
 
+block styles
+    link(rel="stylesheet" href="styles/chat.css")
 block content
     main
         header
             h1 Chat
-            p User: 
-                span(id="username")=username
-            p Room: 
-                span(id="room")=room
+            div
+                p User: 
+                    span(id="username")=username
+                p Room: 
+                    span(id="room")=room
         ul(id="messages")
+            
 
         form(id="form" action="")
             input(id="input" autocomplete="off")
