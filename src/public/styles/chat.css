@@ -31,10 +31,35 @@ p {
 }
 
 ul {
+    display: flex;
     list-style: none;
     margin: .5rem;
     padding: .2rem;
     overflow: auto;
+}
+
+.info {
+    background-color: var(--background-1);
+    font-size: .8rem;
+    width: fit-content;
+    margin: .1rem;
+    border-radius: .6rem;
+    padding: .4rem;
+    align-self: center;
+}
+
+.message {
+    width: fit-content;
+    padding: .5rem;
+    margin: .1rem 1rem .2rem .1rem;
+    border-radius: .4rem;
+    background-color: var(--message-left);
+}
+
+.current-user {
+    background-color: var(--message-right);
+    margin: .1rem .1rem .2rem 1rem;
+    align-self: flex-end;
 }
 
 form {
