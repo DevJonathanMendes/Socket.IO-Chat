@@ -14,15 +14,13 @@ io.on("connection", socket => {
 
         socket.join(user.room);
 
-        socket.emit("message", `Welcome ${user.username}!`);
-
         socket.broadcast
             .to(user.room)
-            .emit("message", `${user.username} joined the chat`);
+            .emit("info", `${user.username} joined the chat`);
 
         socket.on("chatMessage", msg => {
             const user = getCurrentUser(socket.id);
-            io.to(user.room).emit("message", msg);
+            io.to(user.room).emit("message", { ...user, msg: msg });
         });
 
         socket.on("disconnect", () => {
@@ -30,7 +28,7 @@ io.on("connection", socket => {
 
             if (user)
                 io.to(user.room)
-                    .emit("message", `${user.username} left`);
+                    .emit("info", `${user.username} left`);
         });
     });
 });

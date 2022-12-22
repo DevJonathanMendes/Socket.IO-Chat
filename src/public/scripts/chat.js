@@ -17,9 +17,22 @@ form.addEventListener("submit", event => {
     };
 });
 
-socket.on("message", msg => {
-    const text = document.createElement("li");
-    text.textContent = msg;
-    messages.appendChild(text);
-    messages.scrollTo(0, document.body.scrollHeight);
+socket.on("info", msg => {
+    createMessage(msg, "info");
 });
+
+socket.on("message", obj => {
+    const { id, username, msg } = obj;
+    if (id === socket.id)
+        createMessage(msg, "message current-user");
+    else
+        createMessage(`${username}: ${msg}`, "message");
+});
+
+const createMessage = (msg, className) => {
+    const li = document.createElement("li");
+    li.setAttribute("class", className)
+    li.textContent = msg;
+    messages.appendChild(li);
+    messages.scrollTo(0, document.body.scrollHeight);
+};
