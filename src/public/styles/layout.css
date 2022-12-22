@@ -1,7 +1,7 @@
 :root {
     --background-dark: #0B141A;
-    --background-1: #2A3942;
-    --background-2: #D1D7DB;
+    --form: #202C33;
+    --input: #2A3942;
     --message-left: #202C33;
     --message-right: #005C4B;
 }
