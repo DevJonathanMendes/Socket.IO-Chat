@@ -49,6 +49,13 @@ http://localhost:[PORTA]/chat?username=[USERNAME]&room=[SALA] - Rota de chat
 
 ## 🖼️ Screenshot
 
+Login:
+
+![socketio-login](https://user-images.githubusercontent.com/89454975/209169538-e9513b38-e251-41df-827a-fff618fcc91a.png)
+
+Chat:
+
+![socketio-chat](https://user-images.githubusercontent.com/89454975/209169613-c6d00857-d215-45f4-a434-0d6079d548b9.png)
 
 
 ## 📄 Licença
