@@ -1,0 +1,56 @@
+body,
+main,
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    height: 100%;
+    width: 720px;
+    margin: auto;
+    border: 1px solid #fff;
+    padding: 1rem;
+    border-radius: .4rem;
+}
+
+header {
+    display: flex;
+    padding: .2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    margin: .4rem .2rem;
+}
+
+p {
+    margin: .1rem;
+    padding: .1rem;
+}
+
+ul {
+    list-style: none;
+    margin: .5rem;
+    padding: .2rem;
+    overflow: auto;
+}
+
+form {
+    display: flex;
+    margin-top: auto;
+}
+
+input {
+    padding: .5rem;
+    flex-grow: 1;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    padding: .5rem;
+}

@@ -1,0 +1,30 @@
+body,
+form>div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+main {
+    margin: auto;
+    border: 1px solid #fff;
+    padding: 1rem;
+    border-radius: .4rem;
+}
+
+h1 {
+    margin: .4rem 0;
+}
+
+input {
+    margin: .2rem;
+    border: none;
+    border-radius: .2rem;
+    padding: .4rem;
+}
+
+button {
+    margin: .3rem .2rem 0 .2rem;
+    padding: .3rem;
+    cursor: pointer;
+}

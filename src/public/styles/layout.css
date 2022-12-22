@@ -1,0 +1,24 @@
+:root {
+    --background-dark: #0B141A;
+    --background-1: #2A3942;
+    --background-2: #D1D7DB;
+    --message-left: #202C33;
+    --message-right: #005C4B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--background-dark);
+    font-family: Monaco, monospace;
+    color: #fff;
+}
