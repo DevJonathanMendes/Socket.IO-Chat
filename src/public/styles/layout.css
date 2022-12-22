@@ -19,6 +19,6 @@ body {
 
 body {
     background-color: var(--background-dark);
-    font-family: Monaco, monospace;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #fff;
 }
