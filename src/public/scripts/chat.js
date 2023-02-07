@@ -34,5 +34,5 @@ const createMessage = (msg, className) => {
     li.setAttribute("class", className)
     li.textContent = msg;
     messages.appendChild(li);
-    messages.scrollTo(0, document.body.scrollHeight);
+    messages.scrollTo(0, messages.scrollHeight);
 };
